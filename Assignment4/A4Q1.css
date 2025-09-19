@@ -1,0 +1,67 @@
+
+.card {
+    position: relative;
+    height: 50%;
+    margin-bottom: 30px;
+}
+
+body {
+    /* background-image: url('/Assignment4/bg-texture.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    background-color: rgb(53, 55, 55);
+}
+
+.imgg {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    height: 22px;
+    width: 22px;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.img2{
+    position: absolute;
+    top: -26px;
+    right: 40%;
+    height: 38px;
+    width: 38px;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.crimg img{
+    border-radius: 50%;
+}
+
+.ttimmg img{
+    border-radius: 25%;
+}
+
+
+.mynav{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    padding-left: 20%;
+    padding-right: 20%;
+    /* padding-top: 20px; */
+}
+
+.mymavin{
+    background-color: grey;
+    border-radius: 4px;
+}
+
+.nav-item img{
+    width: 20px;
+    height: 20px;
+    /* border-radius: 50%; */
+    margin-left: 20px;
+}
+
+.card{
+    background-color: blue;
+}
