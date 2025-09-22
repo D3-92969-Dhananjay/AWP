@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+</head>
+<body>
+    <script>
+        let a = -1, b=-1,c=-1;
+
+        while(a<0){
+            a = parseInt( window.prompt("Enter 1st number : "))
+            if(a<0) window.alert("Enter a positive number");
+        }
+
+        while(b<0){
+            b = parseInt( window.prompt("Enter 2nd number : "))
+            if(b<0) window.alert("Enter a positive number");
+        }
+
+        while(c<0){
+            c = parseInt( window.prompt("Enter 3rd number : "))
+            if(c<0) window.alert("Enter a positive number");
+        }
+
+        if(a<=b && b<=c) window.alert("The largest number is "+ c);
+        else if(b<=c && c<=a ) window.alert("The largest number is "+ a)
+        else window.alert("The largest number is "+ b)
+
+
+    </script>
+    
+</body>
+</html>
