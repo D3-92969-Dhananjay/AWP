@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6 Q1</title>
+</head>
+<body>
+    <h1>Day & Greeting Web Page</h1>
+
+    <div class="display" style="color: red;">
+        <h2 id="dayDate">Today is Friday, 21 March 2025,</h2>
+        <h2 id="Greet">Welcome, and Good morning to you</h2>
+        <h2 id="dayLeft">Number of days left till end of year : 285</h2>
+    </div>
+
+    <script>
+        const d = new Date()
+
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        const week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+        console.log('Current date  = '+d.getDate());
+        console.log('Current month  = '+d.getMonth());
+        console.log('Current year = '+d.getFullYear());
+        console.log('Current day  = '+d.getDay());
+        console.log('Current time  = '+d.getTime());
+
+        let dayDate = document.getElementById("dayDate")
+        dayDate.innerHTML = `Today is ${week[d.getDay()]}, ${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()},`
+
+        let Greeting = "Welcome, and " 
+        if(d.getHours() < 12) {
+            Greeting += "Good morning to you"
+        } else if(d.getHours() < 18) {
+            Greeting += "Good afternoon to you"
+        } else {
+            Greeting += "Good evening to you"
+        }
+
+        document.getElementById("Greet").innerHTML = Greeting ;
+
+        let today = new Date();
+        let endOfYear = new Date(today.getFullYear(), 11, 31); 
+        let diffTime = endOfYear - today;
+        let diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        document.getElementById("dayLeft").innerHTML = `Number of days left till end of year : <span style="color : blue">${diffDays}</span>`;
+
+        
+        
+    </script>
+</body>
+</html>
