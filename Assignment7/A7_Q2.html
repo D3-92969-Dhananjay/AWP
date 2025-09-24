@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7 Q2</title>
+    <style>
+        .input{
+            display: flex;
+            padding-left: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div>
+            <h1>Enter Employee Names</h1>
+        </div>
+        <div class="dataInput">
+            <input type="text" id="name" placeholder="Enter Employee name">
+            <button onclick="insertName()">Add Name</button>
+            <button onclick="sortnames()">Sort & Display</button>
+        </div>
+        <div>
+            <h3>Sorted Employee Names : </h3>
+            <div >
+                <ol id="lists">
+                </ol>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="A7_Q2.js"></script>
+</body>
+</html>

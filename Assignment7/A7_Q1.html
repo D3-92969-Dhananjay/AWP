@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3_Q1</title>
+
+    <style>
+        .tbody p{
+            padding-bottom: 10px;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div style="text-align: center;">
+            <img src="/Assignment3/Sunbeam_logo.png" alt="logo">
+        </div>
+        <div style="text-align: center;">
+            <h1>Sunbeam Registration Form</h1>
+        </div>
+
+        <div style="padding-left: 25%;">
+            <table >
+                <tr>
+                    <td><iframe src="https://www.w3schools.com/" frameborder="0"></iframe></td>
+                    <td>
+                        <form action="submit">
+                <table>
+                    <tbody class="tbody">
+                        <tr>
+                            <td><label for="">Name</label></td>
+                            <td>: <input type="text" id="Name"> <p style="color: red;">Only alphabets allowed (max 10 characters)</p></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Birthdate </label></td>
+                            <td>: <input type="date" id="Birthdate"> <p style="color: red;">user must be at least 18 year old</p> </td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Email </label></td>
+                            <td>: <input type="text" id="Email"> <p style="color: red;">Email is required </p> </td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Password</label></td>
+                            <td>: <input type="password" id="Password"> <p style="color: red;">Greater than 8 characters, must contain a # and at least one digit </p></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Address</label></td>
+                            <td>: <input type="text" id="Address"><p style="color: red;">address is required</p></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Gender</label></td>
+                            <td>: <input type="radio" name="gender">Male
+                                <input type="radio" name="Female"> Female
+                                <p style="color: red;">Gender is required</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="myFile">Upload photo</label> </td>
+                            <td><input type="file" id="myFile" name="uploadedFile">
+                            <p style="color: red;">Photo is required</p></td>
+                        </tr>
+
+                        <tr>
+                            <td> <label for="Course">Select Your Course :</label></td>
+                            <td>
+                                <select name="Course" id="Course">
+                                    <option value="Java">Java</option>
+                                    <option value="CPP">CPP</option>
+                                    <option value="Python">Python</option>
+                                    <option value="JS">JS</option>
+                                </select>
+                                <p style="color: red;">Please select a course</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="">Skill Set :</label>
+                            </td>
+                            <td>
+                                <input type="checkbox"> Java    
+                                <input type="checkbox"> CPP
+                                <input type="checkbox"> OS
+                                <p style="color: red;">select Atleast one skill</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" value="register"> 
+                                <input type="reset" value="Clear">
+                            </td>
+                        </tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <script src="A7_Q1.js"></script>
+</body>
+
+</html>
